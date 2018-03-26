@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lao-Shan Lungs' Home Shop</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="css/lunbo.css">
+    <link rel="stylesheet" href="css/btt.css">
+	<link type="text/css" rel="stylesheet" href="css/animate.css" />
+	
+    <style>
+        a:link,
+        a:visited {
+            background-color:rgba(0,0,0,0);
+            color: black;
+            padding:0;
+            text-decoration: none;
+            display: inline-block
+        }
+
+        a:hover,
+        a:active {
+            background-color: rgba(0,0,0,0.3);
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 網頁頂部部分 -->
+ <header>
+       <div class="logo"><img src="pictures/index/Lao_Shan_Lung_Icon.png" width="179" height="169" alt="" /></div>
+       <div class="title"><img src="pictures/index/LSLHS.png" width="443" height="93" alt="" /></div>
+       <div class="languange"><img class="a1" src="pictures/index/a1.png" width="70" height="80" alt="" />
+	   <img class="a2" src="pictures/index/a2.png" width="70" height="80" alt="" />
+	   </div>
+	 
+	 <p id="back-to-top"><a href="#top"><span></span><img src="pictures/index/btt.png" width="100" height="100" alt="" />Back to top</a></p>
+	 
+   </header> 
+
+   <!-- 菜單按鈕部分 -->
+   <div class="menu">
+       <div class="music">
+       <button onclick="playaud()" tpe="button"    class="button"><i class="fa fa-bell-o"></i></button>
+       <button onclick="pauseaud()" tpe="button"    class="button"><i class="fa fa-bell-slash-o"></i></button>
+       <audio autoplay loop id="bgmusic">
+        <source src="audio/Bg music.mp3" type="audio/mpeg"></audio>
+</div>
+       <div class="news">
+       <ul>
+    <a href="about.html"><img src="pictures/index/about.png" width="142" height="25" alt="" /></a>|
+    <a href="product.html"><img src="pictures/index/products.png" width="156" height="24" alt="" /></a>|
+    <a href="contact.html"><img src="pictures/index/contact.png" width="136" height="26" alt="" /></a>
+    </ul>
+    </div>
+    
+    <!-- 社交網頁部分 -->
+       <div class="media"><img src="pictures/index/follow.png" width="189" height="23" alt="" /><br>
+		   <a href="https://www.facebook.com" target="_blank">
+	<i class="fa fa-facebook-f" style="font-size:36px"></i>
+	</a>  
+	<a href="https://www.twitter.com" target="_blank">
+	<i class="fa fa-twitter-square" style="font-size:36px"></i>
+	</a><br></div>
+   </div>
+
+     <!-- 内容部分 -->
+   <div class="box">
+       <!-- 內容左側 -->
+       <div class="boxleft">
+       <div class="image">
+	<img src="pictures/index/news.png" width="90" height="24" alt="" />  
+	<img src="pictures/index/MH 10th.jpg" width="800" height="340" alt="" />
+    <video width="800" controls>
+    <source src="movie/Monster Hunter 10th Anniversary Size Comparison.mp4" type="video/mp4">
+    </video>
+    </div>
+           <div class="content"><img src="pictures/index/gallery.png" width="138" height="26" alt="" />
+		   <br>
+		<div class="lunbo-01">
+        <div id="lunbo-01-1">
+            <div class="ig">
+                <img src="pictures/index/jquery/MHP2.png" height="360" width="640" />
+            </div>
+            <div class="ig">
+                <img src="pictures/index/jquery/MHP3.jpg" height="360" width="640" />
+            </div>
+            <div class="ig">
+                <img src="pictures/index/jquery/MHXX.jpg" height="360" width="640" />
+            </div>
+            <div class="ig">
+                <img src="pictures/index/jquery/MHW.jpg" height="360" width="640" />
+            </div>
+			<div class="ig">
+                <img src="pictures/index/jquery/MHW2.jpg" height="360" width="640" />
+            </div>
+            <div id="lunbo-01-left">
+                <img src="pictures/index/jquery/left.png" height="15" width="15" />
+            </div>
+            <div id="lunbo-01-right">
+                <img src="pictures/index/jquery/right.png" height="15" width="15" />
+            </div>
+            <div id="lunbo-01-bottom">
+                <p style="background:#FFFFFF "></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+		   </div>
+       </div>
+       <!-- 內容右側 -->
+       <div class="boxright">
+        <img src="pictures/index/more.png" width="246" height="25" alt="" />
+           <div class="advertising"><a target="_blank" href="https://game.capcom.com/manual/MHW/"><image src="pictures/official website/MHW.png" alt="Official Website" style="width:180px;height:80px;"></image></a></div>
+           <div class="advertising"><a target="_blank" href="http://www.capcom.co.jp/monsterhunter/XX/"><image src="pictures/official website/MHXX.jpg" alt="Official Website" style="width:180px;height:80px;"></image></a></div>
+           <div class="advertising"><a target="_blank" href="http://www.capcom.co.jp/monsterhunter/4G/"><image src="pictures/official website/MH4G.png" alt="Official Website" style="width:180px;height:80px;"></image></a></div>
+           <div class="advertising"><a target="_blank" href="http://mhfg.capcom.com.tw/index.html"><image src="pictures/official website/MHFZ.jpg" alt="Official Website" style="width:180px;height:80px;"></image></a></div>
+       </div>
+   </div>
+     
+   <script>
+		var aud =document.getElementById("bgmusic");
+		
+		function playaud(){
+		aud.play();
+		}
+		function pauseaud(){
+		aud.pause();
+		}
+	
+	</script>
+	
+	<script src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+<script>
+$(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#back-to-top").fadeIn(1500);
+                }
+                else
+                {
+                    $("#back-to-top").fadeOut(1500);
+                }
+            });
+
+            //当点击跳转链接后，回到页面顶部位置
+
+            $("#back-to-top").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+
+<script src="js/tupianlunbo.js"></script>

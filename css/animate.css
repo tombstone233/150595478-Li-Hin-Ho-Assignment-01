@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+/*定义一个名字叫heartAnimate的动画，实现心形图的放大以及旋转效果*/
+@keyframes Animate{ 
+    0%,100%{transform:scale(1) rotate(0);}                       /*0%,100%时保持图形的原大小且不旋转*/
+    10%,30%{transform: scale(0.9) rotate(3deg);}                  /*10%,30%时图形缩小成0.9倍，并且顺时针旋转3度*/
+    20%,40%,60%,80%{transform:scale(1.1) rotate(-3deg);}         /*20%,40%,60%,80%时图形扩大成1.1倍，并且逆时针旋转3度*/
+    50%,70%{ transform:scale(1.1) rotate(3deg);}                 /*50%,70%时图形扩大成1.1倍，并且顺时针旋转3度*/
+}
+@-webkit-keyframes Animate{
+    0%,100%{-webkit-transform: scale(1) rotate(0);}
+    10%,30%{-webkit-transform:scale(0.9) rotate(3deg);}
+    20%,40%,60%,80%{-webkit-transform: scale(1.1) rotate(-3deg);}
+    50%,70%{-webkit-transform: scale(1.1) rotate(3deg);}
+}
+@-moz-keyframes Animate{
+    0%,100%{-moz-transform:scale(1) rotate(0);}
+    10%,30%{-moz-transform: scale(0.9) rotate(3deg);}
+    20%,40%,60%,80%{-moz-transform:scale(1.1) rotate(-3deg);}
+    50%,70%{ -moz-transform:scale(1.1) rotate(3deg);}
+}
+@-o-keyframes Animate{
+    0%,100%{-o-transform:scale(1) rotate(0);}
+    10%,30%{-o-transform: scale(0.9) rotate(3deg);}
+    20%,40%,60%,80%{-o-transform:scale(1.1) rotate(-3deg);}
+    50%,70%{ -o-transform:scale(1.1) rotate(3deg);}
+}
+@-ms-keyframes Animate{
+    0%,100%{-ms-transform:scale(1) rotate(0);}
+    10%,30%{-ms-transform: scale(0.9) rotate(3deg);}
+    20%,40%,60%,80%{-ms-transform:scale(1.1) rotate(-3deg);}
+    50%,70%{ -ms-transform:scale(1.1) rotate(3deg);}
+}
+.a1{
+    -webkit-animation: Animate 1s ease infinite;    /*调用名称为heartAnimate的动画，全程1s，速度曲线是ease，无限循环播放*/
+    -moz-animation: Animate 1s ease infinite;
+    -o-animation: Animate 1s ease infinite;
+    -ms-animation: Animate 1s ease infinite;
+    animation: Animate 1s ease infinite;
+}
+
+.a2{
+    -webkit-animation: Animate 1s ease infinite;    /*调用名称为heartAnimate的动画，全程1s，速度曲线是ease，无限循环播放*/
+    -moz-animation: Animate 1s ease infinite;
+    -o-animation: Animate 1s ease infinite;
+    -ms-animation: Animate 1s ease infinite;
+    animation: Animate 1s ease infinite;
+}
