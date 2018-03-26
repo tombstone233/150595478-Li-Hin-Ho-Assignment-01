@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,24 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/btt.css">
-	<link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <style>
         a:link,
         a:visited {
-            background-color:rgba(0,0,0,0);
+            background-color: rgba(0, 0, 0, 0);
             color: black;
-            padding:0;
+            padding: 0;
             text-decoration: none;
             display: inline-block
         }
 
         a:hover,
         a:active {
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0, 0, 0, 0.3);
             color: white
         }
     </style>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 function MM_validateForm() { //v4.0
   if (document.getElementById){
     var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
@@ -42,114 +43,190 @@ function MM_validateForm() { //v4.0
     } if (errors) alert('The following error(s) occurred:\n'+errors);
     document.MM_returnValue = (errors == '');
 } }
-    </script>
+    </script> -->
+    <!-- 这段代码导致你的bug咱没有删代码的习惯，正式开发代码不能随便删除所以注释了记得自己处理哦 -->
 </head>
 
 <body>
     <!-- 網頁頂部部分 -->
- <header>
-       <div class="logo">
-	      <a href="index.html"><img src="pictures/index/Lao_Shan_Lung_Icon.png" width="179" height="169" alt="" /></a></div>
-       <div class="title"><span class="logo"><img src="pictures/index/bth.png" width="200" height="123" alt="" /></span><img src="pictures/index/LSLHS.png" width="443" height="93" alt="" /></div>
-       <div class="languange"><img class="a1" src="pictures/index/a1.png" width="70" height="80" alt="" />
-	   <img class="a2" src="pictures/index/a2.png" width="70" height="80" alt="" />
-	   </div>
-	 <p id="back-to-top"><a href="#top"><span></span><img src="pictures/index/btt.png" width="100" height="100" alt="" />Back to top</a></p> 
-   </header>
-   <!-- 菜單按鈕部分 -->
-   <div class="menu">
-       <div class="music">
-       <button onclick="playaud()" tpe="button"    class="button"><i class="fa fa-bell-o"></i></button>
-       <button onclick="pauseaud()" tpe="button"    class="button"><i class="fa fa-bell-slash-o"></i></button>
-       <audio autoplay loop id="bgmusic">
-        <source src="audio/Bg music.mp3" type="audio/mpeg"></source></audio>
-</div>
-       <div class="news">
-       <ul>
-    <a href="about.html"><img src="pictures/index/about.png" width="142" height="25" alt="" /></a>|
-    <a href="product.html"><img src="pictures/index/products.png" width="156" height="24" alt="" /></a>|
-    <a href="contact.html"><img src="pictures/index/contact.png" width="136" height="26" alt="" /></a>
-    </ul>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="pictures/index/Lao_Shan_Lung_Icon.png" width="179" height="169" alt="" />
+            </a>
+        </div>
+        <div class="title">
+            <span class="logo">
+                <img src="pictures/index/bth.png" width="200" height="123" alt="" />
+            </span>
+            <img src="pictures/index/LSLHS.png" width="443" height="93" alt="" />
+        </div>
+        <div class="languange">
+            <img class="a1" src="pictures/index/a1.png" width="70" height="80" alt="" />
+            <img class="a2" src="pictures/index/a2.png" width="70" height="80" alt="" />
+        </div>
+        <p id="back-to-top">
+            <a href="#top">
+                <span></span>
+                <img src="pictures/index/btt.png" width="100" height="100" alt="" />Back to top</a>
+        </p>
+    </header>
+    <!-- 菜單按鈕部分 -->
+    <div class="menu">
+        <div class="music">
+            <button onclick="playaud()" tpe="button" class="button">
+                <i class="fa fa-bell-o"></i>
+            </button>
+            <button onclick="pauseaud()" tpe="button" class="button">
+                <i class="fa fa-bell-slash-o"></i>
+            </button>
+            <audio autoplay loop id="bgmusic">
+                <source src="audio/Bg music.mp3" type="audio/mpeg"></source>
+            </audio>
+        </div>
+        <div class="news">
+            <ul>
+                <a href="about.html">
+                    <img src="pictures/index/about.png" width="142" height="25" alt="" />
+                </a>|
+                <a href="product.html">
+                    <img src="pictures/index/products.png" width="156" height="24" alt="" />
+                </a>|
+                <a href="contact.html">
+                    <img src="pictures/index/contact.png" width="136" height="26" alt="" />
+                </a>
+            </ul>
+        </div>
+
+        <!-- 社交網頁部分 -->
+        <div class="media">
+            <img src="pictures/index/follow.png" width="189" height="23" alt="" />
+            <br>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-f" style="font-size:36px"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fa fa-twitter-square" style="font-size:36px"></i>
+            </a>
+            <br>
+        </div>
     </div>
-    
-    <!-- 社交網頁部分 -->
-       <div class="media"><img src="pictures/index/follow.png" width="189" height="23" alt="" /><br>
-		   <a href="https://www.facebook.com" target="_blank">
-	<i class="fa fa-facebook-f" style="font-size:36px"></i>
-	</a>  
-	<a href="https://www.twitter.com" target="_blank">
-	<i class="fa fa-twitter-square" style="font-size:36px"></i>
-	</a><br></div>
-   </div>
 
-   <!-- 内容部分 -->
-   <div class="box">
-       <!-- 內容左側 -->
-       <div class="boxleft">
-           <div class="image">
-               <p onMouseOver="MM_validateForm('textfield03','','NisEmail');return document.MM_returnValue"><img src="pictures/contact/feedback.png" width="456" height="27" alt="" />
-                 <br>
-                 <label for="textfield01">
-                   <img src="pictures/contact/name.png" width="85" height="27" alt="" />:</label>
-                 <input name="textfield01" type="text" required="required" id="textfield01" onBlur="MM_validateForm('textfield01','','R');MM_validateForm('textfield01','','R');return document.MM_returnValue">
-                 <br>
-                 <label for="tel"><img src="pictures/contact/phone number.png" width="189" height="26" alt="" />:</label>
-                 <input name="textfield02" type="text" required="required" id="textfield02" onBlur="MM_validateForm('textfield01','','R');MM_validateForm('textfield01','','R');MM_validateForm('textfield02','','RinRange11111111:99999999');return document.MM_returnValue">
-                 <br> 
-                 <label for="email"><img src="pictures/contact/email address.png" width="206" height="27" alt="" />:</label>
-                 <input name="textfield03" type="text" required="required" id="textfield03" onBlur="MM_validateForm('textfield01','','R');MM_validateForm('textfield01','','R');MM_validateForm('textfield03','','RisEmail');return document.MM_returnValue">
-             <p onMouseOver="MM_validateForm('textfield04','','NisNum');MM_validateForm('textfield04','','R');return document.MM_returnValue"><img src="pictures/contact/message.png" width="123" height="29" alt="" />:<p>
-               <textarea name="textfield04" required="required" id="textfield04" onBlur="MM_validateForm('textfield04','','R');return document.MM_returnValue">Type here!</textarea>                 
-             <p>                 
-                 <p onMouseOver="MM_validateForm('textfield04','','R');return document.MM_returnValue">
-                 <input type="submit" name="submit" id="submit" value="Submit">
-         </div>
-           <div class="content"><img src="pictures/contact/thx.jpg" width="480" height="272" alt="" /></div>
-       </div>
-       <!-- 內容右側 -->
-      <div class="boxright">
-        <img src="pictures/index/more.png" width="246" height="25" alt="" />
-           <div class="advertising"><a target="_blank" href="https://game.capcom.com/manual/MHW/"><image src="pictures/official website/MHW.png" alt="Official Website" style="width:180px;height:80px;"></image></a></div>
-           <div class="advertising"><a target="_blank" href="http://www.capcom.co.jp/monsterhunter/XX/"><image src="pictures/official website/MHXX.jpg" alt="Official Website" style="width:180px;height:80px;"></image></a></div>
-           <div class="advertising"><a target="_blank" href="http://www.capcom.co.jp/monsterhunter/4G/"><image src="pictures/official website/MH4G.png" alt="Official Website" style="width:180px;height:80px;"></image></a></div>
-           <div class="advertising"><a target="_blank" href="http://mhfg.capcom.com.tw/index.html"><image src="pictures/official website/MHFZ.jpg" alt="Official Website" style="width:180px;height:80px;"></image></a></div>
-       </div>
-   </div>
-     
-   <script>
-		var aud =document.getElementById("bgmusic");
-		
-		function playaud(){
-		aud.play();
-		}
-		function pauseaud(){
-		aud.pause();
-		}
-	
-	</script>
-<script src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
-<script>
-$(function(){
-        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+    <!-- 内容部分 -->
+    <div class="box">
+        <!-- 內容左側 -->
+        <div class="boxleft">
+            <div class="image">
+                <!-- <p onMouseOver="MM_validateForm('textfield03','','NisEmail');return document.MM_returnValue">
+                    <img src="pictures/contact/feedback.png" width="456" height="27" alt="" />
+                    <br>
+                    <label for="textfield01">
+                        <img src="pictures/contact/name.png" width="85" height="27" alt="" />:</label>
+                    <input name="textfield01" type="text" required="required" id="textfield01" onBlur="MM_validateForm('textfield01','','R');MM_validateForm('textfield01','','R');return document.MM_returnValue">
+                    <br>
+                    <label for="tel">
+                        <img src="pictures/contact/phone number.png" width="189" height="26" alt="" />:</label>
+                    <input name="textfield02" type="text" required="required" id="textfield02" onBlur="MM_validateForm('textfield01','','R');MM_validateForm('textfield01','','R');MM_validateForm('textfield02','','RinRange11111111:99999999');return document.MM_returnValue">
+                    <br>
+                    <label for="email">
+                        <img src="pictures/contact/email address.png" width="206" height="27" alt="" />:</label>
+                    <input name="textfield03" type="text" required="required" id="textfield03" onBlur="MM_validateForm('textfield01','','R');MM_validateForm('textfield01','','R');MM_validateForm('textfield03','','RisEmail');return document.MM_returnValue">
+                    <p onMouseOver="MM_validateForm('textfield04','','NisNum');MM_validateForm('textfield04','','R');return document.MM_returnValue">
+                        <img src="pictures/contact/message.png" width="123" height="29" alt="" />:
+                        <p>
+                            <textarea name="textfield04" required="required" id="textfield04" onBlur="MM_validateForm('textfield04','','R');return document.MM_returnValue">Type here!</textarea>
+                            <p>
+                                <p onMouseOver="MM_validateForm('textfield04','','R');return document.MM_returnValue">
+                                    <input type="submit" name="submit" id="submit" value="Submit"> -->
+                <form action="">
+                <img src="pictures/contact/feedback.png" width="456" height="27" alt="" />
+                <br>
+                <label for="textfield01">
+                    <img src="pictures/contact/name.png" width="85" height="27" alt="" style="vertical-align: middle;"/>:</label>
+                <input name="textfield01" type="text" required="required" id="textfield01">
+                <br>
+                <label for="tel">
+                    <img src="pictures/contact/phone number.png" width="189" height="26" alt="" style="vertical-align: middle;"/>:</label>
+                <input name="textfield02" type="text" required="required" id="textfield02">
+                <br>
+                <label for="email">
+                <img src="pictures/contact/email address.png" width="206" height="27" alt="" style="vertical-align: middle;"/>:</label>
+                <input name="textfield03" type="text" required="required" id="textfield03">
+                <br>
+                <img src="pictures/contact/message.png" width="123" height="29" alt="" style="vertical-align: middle;"/>:
+                <p>
+                    <textarea name="textfield04" required="required" id="textfield04">Type here!</textarea>
+                </p>
+                <p>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </p>
+            </form>
+            </div>
+            <div class="content">
+                <img src="pictures/contact/thx.jpg" width="480" height="272" alt="" />
+            </div>
+        </div>
+        <!-- 內容右側 -->
+        <div class="boxright">
+            <img src="pictures/index/more.png" width="246" height="25" alt="" />
+            <div class="advertising">
+                <a target="_blank" href="https://game.capcom.com/manual/MHW/">
+                    <image src="pictures/official website/MHW.png" alt="Official Website" style="width:180px;height:80px;"></image>
+                </a>
+            </div>
+            <div class="advertising">
+                <a target="_blank" href="http://www.capcom.co.jp/monsterhunter/XX/">
+                    <image src="pictures/official website/MHXX.jpg" alt="Official Website" style="width:180px;height:80px;"></image>
+                </a>
+            </div>
+            <div class="advertising">
+                <a target="_blank" href="http://www.capcom.co.jp/monsterhunter/4G/">
+                    <image src="pictures/official website/MH4G.png" alt="Official Website" style="width:180px;height:80px;"></image>
+                </a>
+            </div>
+            <div class="advertising">
+                <a target="_blank" href="http://mhfg.capcom.com.tw/index.html">
+                    <image src="pictures/official website/MHFZ.jpg" alt="Official Website" style="width:180px;height:80px;"></image>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var aud = document.getElementById("bgmusic");
+
+        function playaud() {
+            aud.play();
+        }
+
+        function pauseaud() {
+            aud.pause();
+        }
+    </script>
+    <script src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+    <script>
         $(function () {
-            $(window).scroll(function(){
-                if ($(window).scrollTop()>100){
-                    $("#back-to-top").fadeIn(1500);
-                }
-                else
-                {
-                    $("#back-to-top").fadeOut(1500);
-                }
-            });
+            //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 100) {
+                        $("#back-to-top").fadeIn(1500);
+                    } else {
+                        $("#back-to-top").fadeOut(1500);
+                    }
+                });
 
-            //当点击跳转链接后，回到页面顶部位置
+                //当点击跳转链接后，回到页面顶部位置
 
-            $("#back-to-top").click(function(){
-                $('body,html').animate({scrollTop:0},1000);
-                return false;
+                $("#back-to-top").click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 1000);
+                    return false;
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
+
 </html>
